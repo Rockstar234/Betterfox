@@ -24,6 +24,7 @@ user_pref("browser.startup.preXulSkeletonUI", false);
 
 /** EXPERIMENTAL ***/
 user_pref("layout.css.grid-template-masonry-value.enabled", true);
+user_pref("layout.css.animation-composition.enabled", true);
 user_pref("dom.enable_web_task_scheduling", true);
 
 /** GFX ***/
@@ -58,7 +59,7 @@ user_pref("network.ssl_tokens_cache_capacity", 32768);
  * SECTION: SECUREFOX                                                       *
 ****************************************************************************/
 /** TRACKING PROTECTION ***/
-user_pref("browser.contentblocking.category", "strict");
+user_pref("browser.contentblocking.category", "standard");
 user_pref("urlclassifier.trackingSkipURLs", "*.reddit.com, *.twitter.com, *.twimg.com, *.tiktok.com");
 user_pref("urlclassifier.features.socialtracking.skipURLs", "*.instagram.com, *.twitter.com, *.twimg.com");
 user_pref("privacy.query_stripping.strip_list", "__hsfp __hssc __hstc __s _hsenc _openstat dclid fbclid gbraid gclid hsCtaTracking igshid mc_eid ml_subscriber ml_subscriber_hash msclkid oft_c oft_ck oft_d oft_id oft_ids oft_k oft_lk oft_sk oly_anon_id oly_enc_id rb_clickid s_cid twclid vero_conv vero_id wbraid wickedid yclid");
@@ -97,7 +98,7 @@ user_pref("network.predictor.enable-prefetch", false);
 /** SEARCH / URL BAR ***/
 user_pref("browser.search.separatePrivateDefault.ui.enabled", true);
 user_pref("browser.urlbar.update2.engineAliasRefresh", true);
-user_pref("browser.search.suggest.enabled", false);
+user_pref("browser.search.suggest.enabled", true);
 user_pref("browser.urlbar.suggest.quicksuggest.sponsored", false);
 user_pref("browser.urlbar.suggest.quicksuggest.nonsponsored", false);
 user_pref("security.insecure_connection_text.enabled", true);
@@ -116,7 +117,9 @@ user_pref("network.gio.supported-protocols", "");
 user_pref("signon.formlessCapture.enabled", false);
 user_pref("signon.privateBrowsingCapture.enabled", false);
 user_pref("signon.autofillForms", false);
-user_pref("signon.rememberSignons", false);
+user_pref("signon.rememberSignons", true);
+user_pref("signon.generation.available", true);
+user_pref("signon.generation.enabled", true);
 user_pref("editor.truncate_user_pastes", false);
 
 /** ADDRESS + CREDIT CARD MANAGER ***/
@@ -146,7 +149,7 @@ user_pref("browser.safebrowsing.downloads.remote.enabled", false);
 
 /** MOZILLA ***/
 user_pref("accessibility.force_disabled", 1);
-user_pref("identity.fxaccounts.enabled", false);
+user_pref("identity.fxaccounts.enabled", true);
 user_pref("browser.tabs.firefox-view", false);
 user_pref("permissions.default.desktop-notification", 2);
 user_pref("permissions.default.geo", 2);
@@ -207,12 +210,14 @@ user_pref("browser.aboutwelcome.enabled", false);
 user_pref("findbar.highlightAll", true);
 user_pref("middlemouse.contentLoadURL", false);
 user_pref("browser.privatebrowsing.enable-new-indicator", false);
+user_pref("browser.tabs.tabMinWidth", 45);
 
 /** FULLSCREEN ***/
 user_pref("full-screen-api.transition-duration.enter", "0 0");
 user_pref("full-screen-api.transition-duration.leave", "0 0");
 user_pref("full-screen-api.warning.delay", -1);
 user_pref("full-screen-api.warning.timeout", 0);
+user_pref("full-screen-api.transition.timeout", 0);
 
 /** URL BAR ***/
 user_pref("browser.urlbar.suggest.engines", false);
@@ -253,7 +258,9 @@ user_pref("cookiebanners.service.mode.privateBrowsing", 2);
  * START: MY OVERRIDES                                                      *
 ****************************************************************************/
 // Enter your personal prefs below this line:
-
+user_pref("browser.uidensity", 1);
+user_pref("nglayout.enable_drag_images", false);
+user_pref("reader.parse-on-load.enabled", false);
 /****************************************************************************
  * END: BETTERFOX                                                           *
 ****************************************************************************/
