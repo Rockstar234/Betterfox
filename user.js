@@ -10,8 +10,8 @@
 /****************************************************************************
  * Betterfox modify by pr3ttyleaf                                           *
  * "Ad meliora"                                                             *
- * version: 116                                                             *
- * version of modify: Test                                                  *
+ * version: 116.1                                                           *
+ * version of modify: Stable                                                *
  * url: https://github.com/yokoffing/Betterfox                              *
  * modify: https://github.com/Rockstar234/Betterfox                         *
 ****************************************************************************/
@@ -22,7 +22,7 @@
 user_pref("nglayout.initialpaint.delay", 0);
 user_pref("nglayout.initialpaint.delay_in_oopif", 0);
 user_pref("content.notify.interval", 100000);
-user_pref("browser.startup.preXulSkeletonUI", false);
+user_pref("browser.startup.preXulSkeletonUI", false); // WINDOWS
 
 /** EXPERIMENTAL ***/
 user_pref("layout.css.grid-template-masonry-value.enabled", true);
@@ -31,23 +31,18 @@ user_pref("dom.enable_web_task_scheduling", true);
 user_pref("layout.css.has-selector.enabled", true);
 
 /** GFX ***/
-//user_pref("gfx.webrender.precache-shaders", true); // optional
 user_pref("gfx.canvas.accelerated", true); // enable if using a dedicated GPU on WINDOWS
 user_pref("gfx.canvas.accelerated.cache-items", 4096);
 user_pref("gfx.canvas.accelerated.cache-size", 512);
 user_pref("gfx.content.skia-font-cache-size", 20);
 
 /** BROWSER CACHE ***/
-//user_pref("browser.cache.disk.enable", true); // DEFAULT
-//user_pref("browser.cache.disk.smart_size.enabled", false);
-//user_pref("browser.cache.disk.capacity", 8192000);
-//user_pref("browser.cache.disk.metadata_memory_limit", 10000);
-user_pref("browser.cache.memory.capacity", 1048576);
-user_pref("browser.cache.memory.max_entry_size", 65536);
+user_pref("browser.cache.disk.enable", false);
+//user_pref("browser.cache.memory.capacity", 1048576);
+//user_pref("browser.cache.memory.max_entry_size", 65536);
 
 /** MEDIA CACHE ***/
-user_pref("media.memory_cache_max_size", 196608);
-user_pref("media.memory_caches_combined_limit_kb", 1572864);
+user_pref("media.memory_cache_max_size", 65536);
 user_pref("media.cache_readahead_limit", 7200);
 user_pref("media.cache_resume_threshold", 3600);
 
@@ -61,13 +56,11 @@ user_pref("network.http.max-connections", 1800);
 user_pref("network.http.max-persistent-connections-per-server", 10);
 user_pref("network.http.max-urgent-start-excessive-connections-per-host", 5);
 user_pref("network.websocket.max-connections", 400);
-user_pref("network.http.pacing.requests.min-parallelism", 12);
-user_pref("network.http.pacing.requests.burst", 20);
-user_pref("network.http.connection-retry-timeout", 0);
+user_pref("network.http.pacing.requests.enabled", false);
 user_pref("network.dnsCacheEntries", 10000);
 user_pref("network.dnsCacheExpiration", 86400);
 user_pref("network.dns.max_high_priority_threads", 8);
-user_pref("network.ssl_tokens_cache_capacity", 32768);
+user_pref("network.ssl_tokens_cache_capacity", 20480);
 
 /** SPECULATIVE CONNECTIONS ***/
 user_pref("network.http.speculative-parallel-limit", 0);
@@ -85,7 +78,6 @@ user_pref("network.predictor.enable-prefetch", false);
 user_pref("browser.contentblocking.category", "standard");
 user_pref("urlclassifier.trackingSkipURLs", "*.reddit.com, *.twitter.com, *.twimg.com, *.tiktok.com");
 user_pref("urlclassifier.features.socialtracking.skipURLs", "*.instagram.com, *.twitter.com, *.twimg.com");
-user_pref("privacy.query_stripping.strip_list", "__hsfp __hssc __hstc __s _hsenc _openstat dclid fbclid gbraid gclid hsCtaTracking igshid mc_eid ml_subscriber ml_subscriber_hash msclkid oft_c oft_ck oft_d oft_id oft_ids oft_k oft_lk oft_sk oly_anon_id oly_enc_id rb_clickid s_cid twclid vero_conv vero_id wbraid wickedid yclid");
 user_pref("browser.uitour.enabled", false);
 user_pref("privacy.globalprivacycontrol.enabled", true);
 user_pref("privacy.globalprivacycontrol.functionality.enabled", true);
@@ -98,14 +90,13 @@ user_pref("security.cert_pinning.enforcement_level", 2);
 
 /** SSL / TLS ***/
 user_pref("security.ssl.treat_unsafe_negotiation_as_broken", true);
-user_pref("security.ssl.require_safe_negotiation", true);
+user_pref("security.ssl.require_safe_negotiation", false);
 user_pref("browser.xul.error_pages.expert_bad_cert", true);
 user_pref("security.tls.enable_0rtt_data", false);
 
 /** DISK AVOIDANCE ***/
 user_pref("browser.privatebrowsing.forceMediaMemoryCache", true);
 user_pref("browser.sessionstore.interval", 60000);
-user_pref("browser.sessionstore.privacy_level", 2);
 
 /** SHUTDOWN & SANITIZING ***/
 user_pref("privacy.history.custom", true);
@@ -123,9 +114,6 @@ user_pref("network.IDN_show_punycode", true);
 
 /** HTTPS-FIRST POLICY ***/
 user_pref("dom.security.https_first", true);
-
-/** HTTPS-ONLY MODE ***/
-user_pref("dom.security.https_only_mode_error_page_user_suggestions", true);
 
 /** PASSWORDS AND AUTOFILL ***/
 user_pref("signon.autofillForms", false);
@@ -212,6 +200,9 @@ user_pref("browser.preferences.moreFromMozilla", false);
 user_pref("browser.tabs.tabmanager.enabled", false);
 user_pref("browser.aboutConfig.showWarning", false);
 user_pref("browser.aboutwelcome.enabled", false);
+user_pref("browser.display.focus_ring_on_anything", true);
+user_pref("browser.display.focus_ring_style", 0);
+user_pref("browser.display.focus_ring_width", 0);
 user_pref("browser.privateWindowSeparation.enabled", false); // WINDOWS
 user_pref("browser.privatebrowsing.enable-new-indicator", false);
 user_pref("cookiebanners.service.mode", 2);
@@ -239,9 +230,9 @@ user_pref("extensions.pocket.enabled", false);
 
 /** DOWNLOADS ***/
 user_pref("browser.download.useDownloadDir", false);
+user_pref("browser.download.always_ask_before_handling_new_types", true);
 user_pref("browser.download.alwaysOpenPanel", false);
 user_pref("browser.download.manager.addToRecentDocs", false);
-user_pref("browser.download.always_ask_before_handling_new_types", true);
 
 /** PDF ***/
 user_pref("browser.download.open_pdf_attachments_inline", true);
@@ -256,7 +247,7 @@ user_pref("findbar.highlightAll", true);
 /****************************************************************************
  * SECTION: SMOOTHFOX                                                       *
 ****************************************************************************/
-// visit https://github.com/yokoffing/Betterfox/blob/master/Smoothfox.js
+// visit https://github.com/yokoffing/Betterfox/blob/main/Smoothfox.js
 // Enter your scrolling prefs below this line:
 
 /****************************************************************************
