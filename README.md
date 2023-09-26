@@ -27,6 +27,7 @@
 1) Get an **ad blocker** like [uBlock Origin](https://addons.mozilla.org/blog/ublock-origin-everything-you-need-to-know-about-the-ad-blocker/) with our [recommended filters](https://github.com/yokoffing/filterlists#guidelines). For a simple solution, use [Ghostery](https://addons.mozilla.org/en-US/firefox/addon/ghostery/).
 2) Enable **DNS-level protection** with [NextDNS](https://nextdns.io/?from=xujj63g5), and check out our configuration [guide](https://github.com/yokoffing/NextDNS-Config).
     * See how to [quickly enable](https://support.mozilla.org/en-US/kb/dns-over-https) **secure DNS** in Firefox. (optional)
+3) Go to `C:\Program Files\Mozilla Firefox\distribution`. You probably don't have distribution, so create it and put policies.json there. Restart again and then check `about:policies`, if you see tweaks there, then you're good to go.
 
 ## about:Privacy
 Betterfox is a great balance of privacy and convenience.
