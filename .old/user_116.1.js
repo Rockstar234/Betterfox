@@ -10,12 +10,8 @@
 /****************************************************************************
  * Betterfox modify by pr3ttyleaf                                           *
  * "Ad meliora"                                                             *
-<<<<<<< HEAD
  * version: 116.1                                                           *
  * version of modify: Stable                                                *
-=======
- * version: 117                                                             *
->>>>>>> c574f6057ffaa5d79a1a2cd59a479e1ffd0a4592
  * url: https://github.com/yokoffing/Betterfox                              *
  * modify: https://github.com/Rockstar234/Betterfox                         *
 ****************************************************************************/
@@ -26,37 +22,24 @@
 user_pref("nglayout.initialpaint.delay", 0);
 user_pref("nglayout.initialpaint.delay_in_oopif", 0);
 user_pref("content.notify.interval", 100000);
-<<<<<<< HEAD
 user_pref("browser.startup.preXulSkeletonUI", false); // WINDOWS
-=======
->>>>>>> c574f6057ffaa5d79a1a2cd59a479e1ffd0a4592
 
 /** EXPERIMENTAL ***/
 user_pref("layout.css.grid-template-masonry-value.enabled", true);
 user_pref("layout.css.animation-composition.enabled", true);
 user_pref("dom.enable_web_task_scheduling", true);
 user_pref("layout.css.has-selector.enabled", true);
-<<<<<<< HEAD
 
 /** GFX ***/
 user_pref("gfx.canvas.accelerated", true); // enable if using a dedicated GPU on WINDOWS
-=======
-user_pref("dom.security.sanitizer.enabled", true);
-
-/** GFX ***/
-//user_pref("gfx.canvas.accelerated", true); // enable if using a dedicated GPU on WINDOWS
->>>>>>> c574f6057ffaa5d79a1a2cd59a479e1ffd0a4592
 user_pref("gfx.canvas.accelerated.cache-items", 4096);
 user_pref("gfx.canvas.accelerated.cache-size", 512);
 user_pref("gfx.content.skia-font-cache-size", 20);
 
 /** BROWSER CACHE ***/
 user_pref("browser.cache.disk.enable", false);
-<<<<<<< HEAD
 //user_pref("browser.cache.memory.capacity", 1048576);
 //user_pref("browser.cache.memory.max_entry_size", 65536);
-=======
->>>>>>> c574f6057ffaa5d79a1a2cd59a479e1ffd0a4592
 
 /** MEDIA CACHE ***/
 user_pref("media.memory_cache_max_size", 65536);
@@ -72,20 +55,12 @@ user_pref("network.buffer.cache.count", 128);
 user_pref("network.http.max-connections", 1800);
 user_pref("network.http.max-persistent-connections-per-server", 10);
 user_pref("network.http.max-urgent-start-excessive-connections-per-host", 5);
-<<<<<<< HEAD
 user_pref("network.websocket.max-connections", 400);
 user_pref("network.http.pacing.requests.enabled", false);
 user_pref("network.dnsCacheEntries", 10000);
 user_pref("network.dnsCacheExpiration", 86400);
 user_pref("network.dns.max_high_priority_threads", 8);
 user_pref("network.ssl_tokens_cache_capacity", 20480);
-=======
-user_pref("network.http.pacing.requests.enabled", false);
-user_pref("network.dnsCacheEntries", 1000);
-user_pref("network.dnsCacheExpiration", 86400);
-user_pref("network.dns.max_high_priority_threads", 8);
-user_pref("network.ssl_tokens_cache_capacity", 10240);
->>>>>>> c574f6057ffaa5d79a1a2cd59a479e1ffd0a4592
 
 /** SPECULATIVE CONNECTIONS ***/
 user_pref("network.http.speculative-parallel-limit", 0);
@@ -141,12 +116,8 @@ user_pref("network.IDN_show_punycode", true);
 user_pref("dom.security.https_first", true);
 
 /** PASSWORDS AND AUTOFILL ***/
-<<<<<<< HEAD
 user_pref("signon.autofillForms", false);
 user_pref("signon.rememberSignons", true);
-=======
-user_pref("signon.rememberSignons", false);
->>>>>>> c574f6057ffaa5d79a1a2cd59a479e1ffd0a4592
 user_pref("editor.truncate_user_pastes", false);
 
 /** ADDRESS + CREDIT CARD MANAGER ***/
@@ -233,10 +204,7 @@ user_pref("browser.display.focus_ring_on_anything", true);
 user_pref("browser.display.focus_ring_style", 0);
 user_pref("browser.display.focus_ring_width", 0);
 user_pref("browser.privateWindowSeparation.enabled", false); // WINDOWS
-<<<<<<< HEAD
 user_pref("browser.privatebrowsing.enable-new-indicator", false);
-=======
->>>>>>> c574f6057ffaa5d79a1a2cd59a479e1ffd0a4592
 user_pref("cookiebanners.service.mode", 2);
 user_pref("cookiebanners.service.mode.privateBrowsing", 2);
 user_pref("browser.translations.enable", true);
