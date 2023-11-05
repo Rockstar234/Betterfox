@@ -8,9 +8,9 @@
  */
 
 /****************************************************************************
- * Betterfox (feat. yokoffing & pr3ttyleaf)                                 *
+ * Betterfox modify by pr3ttyleaf                                           *
  * "Ad meliora"                                                             *
- * version: 118                                                             *
+ * version: 117                                                             *
  * url: https://github.com/yokoffing/Betterfox                              *
  * modify: https://github.com/Rockstar234/Betterfox                         *
 ****************************************************************************/
@@ -24,6 +24,7 @@ user_pref("content.notify.interval", 100000);
 
 /** EXPERIMENTAL ***/
 user_pref("layout.css.grid-template-masonry-value.enabled", true);
+user_pref("layout.css.animation-composition.enabled", true);
 user_pref("dom.enable_web_task_scheduling", true);
 user_pref("layout.css.has-selector.enabled", true);
 user_pref("dom.security.sanitizer.enabled", true);
@@ -73,7 +74,6 @@ user_pref("network.predictor.enable-prefetch", false);
 user_pref("browser.contentblocking.category", "standard");
 user_pref("urlclassifier.trackingSkipURLs", "*.reddit.com, *.twitter.com, *.twimg.com, *.tiktok.com");
 user_pref("urlclassifier.features.socialtracking.skipURLs", "*.instagram.com, *.twitter.com, *.twimg.com");
-user_pref("privacy.partition.bloburl_per_partition_key", true);
 user_pref("browser.uitour.enabled", false);
 user_pref("privacy.globalprivacycontrol.enabled", true);
 user_pref("privacy.globalprivacycontrol.functionality.enabled", true);
@@ -124,6 +124,7 @@ user_pref("network.auth.subresource-http-auth-allow", 1);
 user_pref("security.mixed_content.block_display_content", true);
 user_pref("pdfjs.enableScripting", false);
 user_pref("extensions.postDownloadThirdPartyPrompt", false);
+user_pref("permissions.delegation.enabled", false);
 
 /** HEADERS / REFERERS ***/
 user_pref("network.http.referer.XOriginTrimmingPolicy", 2);
@@ -139,6 +140,7 @@ user_pref("media.peerconnection.ice.default_address_only", true);
 user_pref("browser.safebrowsing.downloads.remote.enabled", false);
 
 /** MOZILLA ***/
+user_pref("accessibility.force_disabled", 1);
 user_pref("identity.fxaccounts.enabled", true);
 user_pref("browser.tabs.firefox-view", false);
 user_pref("permissions.default.desktop-notification", 2);
@@ -231,6 +233,7 @@ user_pref("browser.download.open_pdf_attachments_inline", true);
 user_pref("pdfjs.sidebarViewOnLoad", 2);
 
 /** TAB BEHAVIOR ***/
+user_pref("browser.tabs.loadBookmarksInTabs", true);
 user_pref("browser.bookmarks.openInTabClosesMenu", false);
 user_pref("browser.menu.showViewImageInfo", true);
 user_pref("findbar.highlightAll", true);
