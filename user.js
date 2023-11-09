@@ -29,7 +29,7 @@ user_pref("layout.css.has-selector.enabled", true);
 user_pref("dom.security.sanitizer.enabled", true);
 
 /** GFX ***/
-user_pref("gfx.canvas.accelerated", true); // enable if using a dedicated GPU on WINDOWS
+//user_pref("gfx.canvas.accelerated", true); // enable if you want to allow Firefox use your GPU // enable if using a dedicated GPU on WINDOWS
 user_pref("gfx.canvas.accelerated.cache-items", 4096);
 user_pref("gfx.canvas.accelerated.cache-size", 512);
 user_pref("gfx.content.skia-font-cache-size", 20);
