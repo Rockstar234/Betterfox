@@ -10,7 +10,7 @@
 /****************************************************************************
  * Betterfox (feat. yokoffing & pr3ttyleaf)                                 *
  * "Ad meliora"                                                             *
- * version: 122                                                             *
+ * version: 119                                                             *
  * url: https://github.com/yokoffing/Betterfox                              *
 ****************************************************************************/
 
@@ -70,6 +70,7 @@ user_pref("browser.download.start_downloads_in_tmp_dir", true);
 user_pref("browser.helperApps.deleteTempFileOnExit", true);
 user_pref("browser.uitour.enabled", false);
 user_pref("privacy.globalprivacycontrol.enabled", true);
+user_pref("privacy.globalprivacycontrol.functionality.enabled", true);
 
 /** OCSP & CERTS / HPKP ***/
 user_pref("security.OCSP.enabled", 0);
@@ -101,7 +102,6 @@ user_pref("network.IDN_show_punycode", true);
 
 /** HTTPS-FIRST POLICY ***/
 user_pref("dom.security.https_first", true);
-user_pref("dom.security.https_first_schemeless", true);
 
 /** PASSWORDS ***/
 user_pref("signon.autofillForms", false);
@@ -110,6 +110,10 @@ user_pref("signon.formlessCapture.enabled", false);
 user_pref("signon.privateBrowsingCapture.enabled", false);
 user_pref("network.auth.subresource-http-auth-allow", 1);
 user_pref("editor.truncate_user_pastes", false);
+
+/** ADDRESS + CREDIT CARD MANAGER ***/
+user_pref("extensions.formautofill.addresses.enabled", false);
+user_pref("extensions.formautofill.creditCards.enabled", false);
 
 /** MIXED CONTENT + CROSS-SITE ***/
 user_pref("security.mixed_content.block_display_content", true);
@@ -200,6 +204,7 @@ user_pref("browser.privateWindowSeparation.enabled", false); // WINDOWS
 /** COOKIE BANNER HANDLING ***/
 user_pref("cookiebanners.service.mode", 1);
 user_pref("cookiebanners.service.mode.privateBrowsing", 1);
+user_pref("cookiebanners.service.enableGlobalRules", true);
 
 /** FULLSCREEN NOTICE ***/
 user_pref("full-screen-api.transition-duration.enter", "0 0");
@@ -220,6 +225,7 @@ user_pref("browser.newtabpage.activity-stream.feeds.section.topstories", false);
 user_pref("extensions.pocket.enabled", false);
 
 /** DOWNLOADS ***/
+user_pref("browser.download.useDownloadDir", false);
 user_pref("browser.download.always_ask_before_handling_new_types", true);
 user_pref("browser.download.manager.addToRecentDocs", false);
 
