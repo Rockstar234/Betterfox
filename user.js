@@ -10,7 +10,7 @@
 /****************************************************************************
  * Betterfox (feat. yokoffing & pr3ttyleaf)                                 *
  * "Ad meliora"                                                             *
- * version: 122                                                             *
+ * version: 122.1                                                           *
  * url: https://github.com/yokoffing/Betterfox                              *
 ****************************************************************************/
 
@@ -37,8 +37,6 @@ user_pref("media.cache_resume_threshold", 3600);
 user_pref("image.mem.decode_bytes_at_a_time", 32768);
 
 /** NETWORK ***/
-user_pref("network.buffer.cache.size", 262144);
-user_pref("network.buffer.cache.count", 128);
 user_pref("network.http.max-connections", 1800);
 user_pref("network.http.max-persistent-connections-per-server", 10);
 user_pref("network.http.max-urgent-start-excessive-connections-per-host", 5);
@@ -216,7 +214,7 @@ user_pref("browser.urlbar.trending.featureGate", false);
 user_pref("browser.newtabpage.activity-stream.feeds.topsites", false);
 user_pref("browser.newtabpage.activity-stream.feeds.section.topstories", false);
 
-/*** POCKET ***/
+/** POCKET ***/
 user_pref("extensions.pocket.enabled", false);
 
 /** DOWNLOADS ***/
